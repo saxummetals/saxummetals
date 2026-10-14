@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saxum Metals</title>
+<meta name="description" content="Saxum Metals is a mineral sourcing agent. We help mine owners find buyers who can use their ore, and help smelters and industrial buyers find checked supply.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" type="image/png" href="assets/emblem-black.png">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap hbar">
+    <a class="logo" href="#top" aria-label="Saxum Metals, back to top"><img class="emb" src="assets/emblem-black.png" alt="" width="600" height="600"><span class="wm-text"><b>Saxum</b><span>Metals</span></span></a>
+    <div class="hright">
+      <nav class="hnav" aria-label="Sections">
+        <a href="#mine-owners">For mine owners</a>
+        <a href="#buyers">For buyers</a>
+        <a href="#dossier">Our service</a>
+        <a href="#commodities">Commodities</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="btn dark" href="#contact">Get in touch</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <svg width="20" height="16" viewBox="0 0 20 16" aria-hidden="true"><path d="M1 2h18M1 8h18M1 14h18" stroke="#171717" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="menu" id="menu" aria-label="Menu" hidden>
+    <a href="#mission">Our mission</a>
+    <a href="#metals">Metals of the 21st century</a>
+    <a href="#mine-owners">For mine owners</a>
+    <a href="#buyers">For buyers and smelters</a>
+    <a href="#dossier">Our service: the dossier</a>
+    <a href="#commodities">Commodities</a>
+    <a href="#where">Where we work</a>
+    <a href="#about">About Saxum</a>
+    <a href="#contact">Get in touch</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <img src="assets/photos/haul-truck.jpg" alt="Excavator loading a haul truck on the floor of a terraced open-pit mine" width="1600" height="1200">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 id="hero-h">Connecting African mineral producers with industrial buyers</h1>
+        <p>We help mine owners find buyers who can actually use their ore, and help smelters and industrial buyers find supply that has been properly checked and independently tested.</p>
+        <p class="now">We are currently welcoming producer introductions and buyer enquiries.</p>
+        <div class="btns">
+          <a class="btn light" href="#contact" data-tab="producer">Introduce your operation</a>
+          <a class="btn outline-w" href="#contact" data-tab="buyer">Discuss a sourcing requirement</a>
+        </div>
+      </div>
+    </div>
+    <span class="photo-note">Illustrative photo</span>
+  </section>
+
+  <section class="sec mission" id="mission" aria-labelledby="mission-h">
+    <div class="wrap">
+      <span class="kicker">Our mission</span>
+      <h2 id="mission-h" class="m-statement">Taking Africa's mining sector to the next level: <span>connecting its producers with global buyers, and raising the bar to international standards.</span></h2>
+      <p class="lead m-lead">Africa holds some of the world's most important mineral resources, yet many independent producers still sell without independent testing, clear contracts or access to global markets. We want to change that, one well-run transaction at a time.</p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <h3>The next level</h3>
+          <p>Helping independent mines present their material professionally, with verified records, proper testing and complete documentation.</p>
+        </div>
+        <div class="pillar">
+          <h3>Global buyers</h3>
+          <p>Connecting African producers with smelters and industrial buyers in Asia, South America and beyond.</p>
+        </div>
+        <div class="pillar">
+          <h3>Raising the bar</h3>
+          <p>Preparing every transaction to recognised international practice, so that African supply is judged on the same terms as any other.</p>
+        </div>
+      </div>
+
+      <div class="standards" aria-labelledby="std-h">
+        <h3 id="std-h" class="std-title">The international standards our process follows</h3>
+        <ul class="std-grid">
+          <li><b>OECD Due Diligence Guidance</b><span>The reference for responsible mineral supply chains: knowing where material comes from and how it was produced.</span></li>
+          <li><b>ISO/IEC 17025 laboratories</b><span>Testing by laboratories accredited to the international standard for testing competence.</span></li>
+          <li><b>Independent inspection</b><span>Sampling, weighing and quality checks at loading by an inspector neither side controls.</span></li>
+          <li><b>Incoterms® 2020</b><span>Delivery terms defined in the language global buyers already use, so risk and cost are clear.</span></li>
+          <li><b>KYC and anti-bribery</b><span>Knowing every counterparty, and paying local partners only for documented work.</span></li>
+        </ul>
+        <p class="std-note">Saxum Metals follows these frameworks in how it prepares transactions; it does not hold them as certifications. Accreditation is held by the laboratories and inspectors appointed for each deal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="metals" id="metals" aria-labelledby="metals-h">
+    <div class="wrap">
+      <div class="metals-head">
+        <span class="kicker">The materials of a modern economy</span>
+        <h2 id="metals-h">These metals drive the 21st century</h2>
+        <p class="lead">Power grids, electric vehicles, steel, stainless steel and the smelters that make them all depend on a handful of raw materials. Five of them are our focus.</p>
+      </div>
+
+      <div class="pt-layout">
+        <div class="pt-scroll" role="region" aria-label="Periodic table with Saxum's commodities highlighted" tabindex="0">
+          <div class="ptable" id="ptable"></div>
+        </div>
+
+        <div class="pt-detail" id="pt-detail" aria-live="polite">
+          <div class="pt-big"><small id="pd-num">29</small><b id="pd-sym">Cu</b></div>
+          <div class="pt-text">
+            <span class="pd-name" id="pd-name">Copper</span>
+            <h3 id="pd-tag">The metal of electrification</h3>
+            <p id="pd-fact">After silver, copper is the best electrical conductor of any metal.</p>
+            <ul id="pd-uses"></ul>
+            <a class="pd-link" id="pd-link" href="#copper">See how we source copper →</a>
+          </div>
+        </div>
+      </div>
+      <p class="pt-hint">Select a highlighted element to see what it powers.</p>
+    </div>
+  </section>
+
+  <section class="sec sand" id="mine-owners" aria-labelledby="mo-h">
+    <div class="wrap two">
+      <div>
+        <span class="kicker">For mine owners</span>
+        <h2 id="mo-h">Have saleable ore? We help you find a buyer who can use it.</h2>
+        <p class="lead">Many smaller mines produce good material but struggle to reach the right smelter or processor. That's the gap we work on.</p>
+        <ul class="ticks">
+          <li><span><b>Buyers matched to your material</b>We look for smelters and processors whose specification fits what you produce, so you're not offering ore to buyers who can't use it.</span></li>
+          <li><span><b>Independent testing buyers trust</b>We arrange sampling and laboratory testing by independent inspectors, so your results are accepted.</span></li>
+          <li><span><b>Help with the paperwork</b>We prepare the product offer and coordinate contracts, export permits and logistics with you and your advisers.</span></li>
+          <li><span><b>Clear, written terms</b>Our fee is agreed in writing before any introduction. You never pay for "access".</span></li>
+        </ul>
+      </div>
+      <aside class="ready" aria-label="What to have ready">
+        <h3>What helps us get started</h3>
+        <ul>
+          <li>Company name and mining licence or claim number</li>
+          <li>Where the mine and any plant are located</li>
+          <li>Recent test results (assays) for your material</li>
+          <li>How much you produce each month and what's in stock</li>
+          <li>Any existing sales agreements</li>
+        </ul>
+        <p class="small">Don't have everything yet? Get in touch anyway and we'll go through it with you.</p>
+        <div class="btns"><a class="btn dark" href="#contact" data-tab="producer">Introduce your operation</a></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="buyers" aria-labelledby="by-h">
+    <div class="wrap two">
+      <div>
+        <span class="kicker">For buyers and smelters</span>
+        <h2 id="by-h">Tell us your specification. We look for checked supply.</h2>
+        <p class="lead">We work from your requirements, not from whatever happens to be on offer.</p>
+      </div>
+      <div>
+        <ul class="ticks">
+          <li><span><b>Producers checked first</b>We confirm who the seller is, what licences they hold and whether they have the right to sell the material offered.</span></li>
+          <li><span><b>Independent sampling and testing</b>Accredited inspectors and laboratories do the testing. We coordinate it; we don't certify.</span></li>
+          <li><span><b>A clear offer</b>Each offer comes with a specification sheet covering origin, test results, quantity and delivery terms.</span></li>
+        </ul>
+        <div class="btns"><a class="btn outline" href="#contact" data-tab="buyer">Discuss a sourcing requirement</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sand" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">How it works</span>
+        <h2 id="how-h">Four steps, agreed in writing</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>We agree the requirement</h3><p>Product, grade limits, quantity, delivery point and payment terms.</p></li>
+        <li><h3>We check the producer</h3><p>Company, licences and authority to sell the material on offer.</p></li>
+        <li><h3>Independent testing</h3><p>Inspectors and laboratories sample and test the material.</p></li>
+        <li><h3>We prepare the deal</h3><p>Offer, contracts, permits and logistics, with the parties and their advisers.</p></li>
+      </ol>
+      <p class="agent-line"><b>We act as an agent.</b> We are paid a fee agreed in writing. We don't own mines, hold stock or handle cargo payments: the buyer pays the seller directly.</p>
+    </div>
+  </section>
+
+  <section class="dossier" id="dossier" aria-labelledby="dossier-h">
+    <div class="wrap dossier-grid">
+      <div class="d-copy">
+        <span class="kicker">Our service</span>
+        <h2 id="dossier-h">The Saxum dossier: pit to port, and beyond</h2>
+        <p class="d-lead">Every transaction we manage is built around one record. It follows the material from the mine to the smelter, and stays with the deal after delivery, so the seller, the buyer and every specialist work from the same facts.</p>
+        <ol class="journey" aria-label="Stages covered by the dossier">
+          <li><button type="button" data-dstage="pit" aria-pressed="true"><span>Pit</span><small>Who is selling, and what</small></button></li>
+          <li><button type="button" data-dstage="testing" aria-pressed="false"><span>Testing</span><small>What the material contains</small></button></li>
+          <li><button type="button" data-dstage="documents" aria-pressed="false"><span>Documents</span><small>What everyone agreed</small></button></li>
+          <li><button type="button" data-dstage="port" aria-pressed="false"><span>Port</span><small>How it moves and is loaded</small></button></li>
+          <li><button type="button" data-dstage="beyond" aria-pressed="false"><span>Delivery and beyond</span><small>Settlement, claims, repeat orders</small></button></li>
+        </ol>
+        <p class="d-note">Example template. Independent inspectors, laboratories and freight specialists do their own work; we coordinate it and keep the record.</p>
+      </div>
+
+      <div class="d-window" aria-label="Example dossier">
+        <div class="d-bar"><span class="d-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="d-title">Saxum dossier · Offer no. ____</span><span class="d-chip">Example</span></div>
+        <div class="d-tabs" role="tablist" aria-label="Dossier stages">
+          <button type="button" role="tab" id="dt-pit" aria-controls="dp-pit" aria-selected="true" data-dstage="pit">Pit</button>
+          <button type="button" role="tab" id="dt-testing" aria-controls="dp-testing" aria-selected="false" data-dstage="testing">Testing</button>
+          <button type="button" role="tab" id="dt-documents" aria-controls="dp-documents" aria-selected="false" data-dstage="documents">Documents</button>
+          <button type="button" role="tab" id="dt-port" aria-controls="dp-port" aria-selected="false" data-dstage="port">Port</button>
+          <button type="button" role="tab" id="dt-beyond" aria-controls="dp-beyond" aria-selected="false" data-dstage="beyond">Beyond</button>
+        </div>
+
+        <div class="d-panel" role="tabpanel" id="dp-pit" aria-labelledby="dt-pit">
+          <p class="d-sum">The source: confirmed before any offer is made.</p>
+          <dl>
+            <div><dt>Seller</dt><dd>Registered company name</dd></div>
+            <div><dt>Licence</dt><dd>Mining licence or claim number</dd></div>
+            <div><dt>Location</dt><dd>Mine and plant coordinates</dd></div>
+            <div><dt>Authority to sell</dt><dd>Confirmed for this lot</dd></div>
+            <div><dt>Production</dt><dd>Monthly output and current stock</dd></div>
+            <div><dt>Site visit</dt><dd>Date and notes</dd></div>
+          </dl>
+        </div>
+        <div class="d-panel" role="tabpanel" id="dp-testing" aria-labelledby="dt-testing" hidden>
+          <p class="d-sum">The material: sampled and tested independently.</p>
+          <dl>
+            <div><dt>Sampling</dt><dd>Independent inspector, sealed samples</dd></div>
+            <div><dt>Laboratory</dt><dd>Accredited laboratory, report no.</dd></div>
+            <div><dt>Grade</dt><dd>Cu, Mn, Cr₂O₃ or Sn %, or CV kcal/kg</dd></div>
+            <div><dt>Impurities</dt><dd>Fe, SiO₂, P, S, ash as relevant</dd></div>
+            <div><dt>Moisture and size</dt><dd>H₂O %, size range in mm</dd></div>
+            <div><dt>Buyer approval</dt><dd>Technical acceptance before dispatch</dd></div>
+          </dl>
+        </div>
+        <div class="d-panel" role="tabpanel" id="dp-documents" aria-labelledby="dt-documents" hidden>
+          <p class="d-sum">The agreement: written down before anything moves.</p>
+          <dl>
+            <div><dt>Fee mandate</dt><dd>Our fee and who pays it, in writing</dd></div>
+            <div><dt>Sales contract</dt><dd>Between seller and buyer</dd></div>
+            <div><dt>Quality terms</dt><dd>Tolerances and rejection rules</dd></div>
+            <div><dt>Onboarding</dt><dd>Identity checks on both parties</dd></div>
+            <div><dt>Export permit</dt><dd>Country of origin</dd></div>
+            <div><dt>Insurance</dt><dd>Who covers the cargo, and when</dd></div>
+          </dl>
+        </div>
+        <div class="d-panel" role="tabpanel" id="dp-port" aria-labelledby="dt-port" hidden>
+          <p class="d-sum">The movement: from stockpile to vessel.</p>
+          <dl>
+            <div><dt>Transport</dt><dd>Road or rail to port</dd></div>
+            <div><dt>Loading inspection</dt><dd>Weight and quality at loading</dd></div>
+            <div><dt>Batch records</dt><dd>Lot numbers kept separate</dd></div>
+            <div><dt>Port and vessel</dt><dd>Named port and booking</dd></div>
+            <div><dt>Shipping documents</dt><dd>Bill of lading and certificates</dd></div>
+            <div><dt>Incoterm</dt><dd>Named place of delivery</dd></div>
+          </dl>
+        </div>
+        <div class="d-panel" role="tabpanel" id="dp-beyond" aria-labelledby="dt-beyond" hidden>
+          <p class="d-sum">After delivery: the deal is closed properly, and the next one starts faster.</p>
+          <dl>
+            <div><dt>Delivery</dt><dd>Confirmed at destination</dd></div>
+            <div><dt>Final assay</dt><dd>Settlement assay, umpire if needed</dd></div>
+            <div><dt>Payment</dt><dd>Buyer pays seller directly</dd></div>
+            <div><dt>Our fee</dt><dd>Invoiced under the mandate</dd></div>
+            <div><dt>Quality claims</dt><dd>Tracked until closed</dd></div>
+            <div><dt>Repeat orders</dt><dd>The record carries into the next shipment</dd></div>
+          </dl>
+        </div>
+        <div class="d-foot">Template only. Fields are completed for each transaction.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="commod" id="commodities">
+    <div class="frame">
+      <section class="c-index" aria-labelledby="com-h">
+        <div class="p-label c-intro"><h2 class="eyebrow" id="com-h">Commodities</h2><span>Our sourcing focus. We are developing supplier relationships, and availability is confirmed offer by offer.</span></div>
+        <div class="c-grid4">
+          <a href="#copper"><span class="p-icon cu" aria-hidden="true"><small>29</small>Cu</span><b>Copper</b><span>Southern Africa</span></a>
+          <a href="#manganese"><span class="p-icon mn" aria-hidden="true"><small>25</small>Mn</span><b>Manganese</b><span>Southern Africa</span></a>
+          <a href="#chrome"><span class="p-icon cr" aria-hidden="true"><small>24</small>Cr</span><b>Chrome</b><span>Southern Africa</span></a>
+          <a href="#coal"><span class="p-icon coal" aria-hidden="true"><small>6</small>C</span><b>Coal</b><span>Southern Africa</span></a>
+          <a href="#tin"><span class="p-icon sn" aria-hidden="true"><small>50</small>Sn</span><b>Tin</b><span>Nigeria · Southern Africa</span></a>
+        </div>
+      </section>
+
+      <section id="copper" aria-labelledby="cu-h">
+        <div class="p-label"><span class="eyebrow">Copper ore and concentrate</span></div>
+        <div class="p-row">
+          <div class="p-info">
+            <div class="p-icon cu" aria-hidden="true"><small>29</small>Cu</div>
+            <h2 id="cu-h">Copper</h2>
+            <p class="desc">For copper smelters and processors. Sourced from producers in southern Africa.</p>
+            <a class="more" href="#contact" data-tab="buyer">Discuss a requirement <span aria-hidden="true">→</span></a>
+            <div class="specs">
+              <div class="spec"><span class="k">Product forms:</span><span class="v">Oxide ore, sulphide ore, concentrate</span></div>
+              <div class="spec"><span class="k">We document:</span><span class="v">Cu %, moisture, sizing</span></div>
+              <div class="spec"><span class="k">Testing:</span><span class="v">Independent inspector and laboratory</span></div>
+              <div class="spec"><span class="k">Batch policy:</span><span class="v">Unlike batches kept separate</span></div>
+            </div>
+          </div>
+          <div class="p-visual">
+            <img src="assets/photos/copper.jpg" alt="Copper ore specimen with green malachite and blue azurite" width="1600" height="1126" loading="lazy">
+            <span class="cap">Reference specimen</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="manganese" aria-labelledby="mn-h">
+        <div class="p-label"><span class="eyebrow">Manganese ore</span></div>
+        <div class="p-row">
+          <div class="p-info">
+            <div class="p-icon mn" aria-hidden="true"><small>25</small>Mn</div>
+            <h2 id="mn-h">Manganese</h2>
+            <p class="desc">For ferromanganese and silicomanganese smelters. Sourced from producers in southern Africa.</p>
+            <a class="more" href="#contact" data-tab="buyer">Discuss a requirement <span aria-hidden="true">→</span></a>
+            <div class="specs">
+              <div class="spec"><span class="k">We document:</span><span class="v">Mn %, Fe %, SiO₂ %, P %</span></div>
+              <div class="spec"><span class="k">Physical:</span><span class="v">Moisture %, particle size mm</span></div>
+              <div class="spec"><span class="k">Testing:</span><span class="v">Independent inspector and laboratory</span></div>
+              <div class="spec"><span class="k">Offers:</span><span class="v">Only after delivered cost is confirmed</span></div>
+            </div>
+          </div>
+          <div class="p-visual">
+            <img src="assets/photos/manganese.jpg" alt="Manganese mineral specimen" width="1600" height="1428" loading="lazy">
+            <span class="cap">Reference specimen</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="chrome" aria-labelledby="cr-h">
+        <div class="p-label"><span class="eyebrow">Chrome ore and concentrate</span></div>
+        <div class="p-row">
+          <div class="p-info">
+            <div class="p-icon cr" aria-hidden="true"><small>24</small>Cr</div>
+            <h2 id="cr-h">Chrome</h2>
+            <p class="desc">For ferrochrome smelters. Sourced from producers in southern Africa.</p>
+            <a class="more" href="#contact" data-tab="buyer">Discuss a requirement <span aria-hidden="true">→</span></a>
+            <div class="specs">
+              <div class="spec"><span class="k">Product forms:</span><span class="v">Chrome ore and concentrate</span></div>
+              <div class="spec"><span class="k">We document:</span><span class="v">Cr₂O₃ %, Cr:Fe ratio, SiO₂ %</span></div>
+              <div class="spec"><span class="k">Testing:</span><span class="v">Independent inspector and laboratory</span></div>
+              <div class="spec"><span class="k">Export:</span><span class="v">Subject to permits in the country of origin</span></div>
+            </div>
+          </div>
+          <div class="p-visual">
+            <img src="assets/photos/chromite.jpg" alt="Chromite ore specimen" width="1600" height="1099" loading="lazy">
+            <span class="cap">Reference specimen</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="coal" aria-labelledby="coal-h">
+        <div class="p-label"><span class="eyebrow">Thermal and industrial coal</span></div>
+        <div class="p-row">
+          <div class="p-info">
+            <div class="p-icon coal" aria-hidden="true"><small>6</small>C</div>
+            <h2 id="coal-h">Coal</h2>
+            <p class="desc">For smelters, power plants and industrial users. Sourced from producers in southern Africa.</p>
+            <a class="more" href="#contact" data-tab="buyer">Discuss a requirement <span aria-hidden="true">→</span></a>
+            <div class="specs">
+              <div class="spec"><span class="k">We document:</span><span class="v">CV kcal/kg, ash %, volatile matter %, sulphur %</span></div>
+              <div class="spec"><span class="k">Physical:</span><span class="v">Total moisture %, size fraction mm</span></div>
+              <div class="spec"><span class="k">Testing:</span><span class="v">Independent inspector and laboratory</span></div>
+              <div class="spec"><span class="k">Basis:</span><span class="v">NAR or GAR stated on every offer</span></div>
+            </div>
+          </div>
+          <div class="p-visual">
+            <img src="assets/photos/coal.jpg" alt="Lump of coal" width="1600" height="1200" loading="lazy">
+            <span class="cap">Reference sample</span>
+          </div>
+        </div>
+      </section>
+      <section id="tin" aria-labelledby="sn-h">
+        <div class="p-label"><span class="eyebrow">Tin ore and concentrate</span></div>
+        <div class="p-row">
+          <div class="p-info">
+            <div class="p-icon sn" aria-hidden="true"><small>50</small>Sn</div>
+            <h2 id="sn-h">Tin</h2>
+            <p class="desc">For tin smelters. Cassiterite ore and concentrate, sourced from producers in Nigeria and southern Africa.</p>
+            <a class="more" href="#contact" data-tab="buyer">Discuss a requirement <span aria-hidden="true">→</span></a>
+            <div class="specs">
+              <div class="spec"><span class="k">Product forms:</span><span class="v">Cassiterite ore and concentrate</span></div>
+              <div class="spec"><span class="k">We document:</span><span class="v">Sn %, Fe, S, As, Bi, Sb</span></div>
+              <div class="spec"><span class="k">Testing:</span><span class="v">Independent inspector and laboratory</span></div>
+              <div class="spec"><span class="k">Due diligence:</span><span class="v">Origin checks in line with OECD guidance for tin</span></div>
+            </div>
+          </div>
+          <div class="p-visual">
+            <img src="assets/photos/tin.jpg" alt="Cassiterite tin ore specimen" width="1600" height="1061" loading="lazy">
+            <span class="cap">Reference specimen, cassiterite</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+  <section class="sec sand" id="where" aria-labelledby="where-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Where we work</span>
+        <h2 id="where-h">Head office in Luanda. Sourcing across Africa.</h2>
+        <p class="lead">From our head office in Luanda, Angola, we work with producers in Nigeria, South Africa, Namibia, Zambia and Zimbabwe, and with smelters and industrial buyers in Brazil, China, Vietnam and Malaysia.</p>
+      </div>
+      <div class="map-box">
+        <canvas id="world" role="img" aria-label="Map showing the head office in Luanda, Angola, sourcing countries Nigeria, South Africa, Namibia, Zambia and Zimbabwe, and export routes from southern African ports to Brazil, Malaysia, Vietnam and China"></canvas>
+      </div>
+      <ul class="legend" aria-label="Map key">
+        <li><i class="lg-hq"></i>Head office</li>
+        <li><i class="lg-src"></i>Sourcing countries</li>
+        <li><i class="lg-dst"></i>Export destinations</li>
+        <li><i class="lg-route"></i>Export routes</li>
+      </ul>
+      <p class="map-note">Schematic map. Coastlines simplified; routes show the markets we serve.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="ph-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">From pit to port</span>
+        <h2 id="ph-h">The work behind every shipment</h2>
+      </div>
+      <div class="photos">
+        <figure><img src="assets/photos/stockpile-conveyor.jpg" alt="Conveyor loading ore into a truck beside a stockpile" width="1600" height="1142" loading="lazy"><figcaption>Loading</figcaption></figure>
+        <figure><img src="assets/photos/walvis-railway.jpg" alt="Freight train crossing the Namib desert towards Walvis Bay" width="1600" height="470" loading="lazy"><figcaption>Rail to Walvis Bay, Namibia</figcaption></figure>
+      </div>
+      <p class="photos-note">Illustrative photos, not Saxum operations.</p>
+    </div>
+  </section>
+
+  <section class="sec sand" id="about" aria-labelledby="about-h">
+    <div class="wrap two">
+      <div>
+        <span class="kicker">About Saxum</span>
+        <h2 id="about-h">A young company, honest about where it stands</h2>
+        <p class="lead">Saxum is Latin for rock. Everything we do starts with the material itself: where it came from, who has the right to sell it, and what it actually contains.</p>
+        <p>We are onboarding our first producers and buyers. Independent laboratories, inspectors, freight forwarders and legal and tax advisers are engaged as each transaction requires.</p>
+        <div class="facts">
+          <div class="fact"><b>Role</b><span>Sourcing agent</span></div>
+          <div class="fact"><b>Head office</b><span>Luanda, Angola</span></div>
+          <div class="fact wide"><b>Sourcing</b><span>Nigeria, South Africa, Namibia, Zambia, Zimbabwe</span></div>
+          <div class="fact wide"><b>We don't</b><span>Own mines, hold stock or handle cargo payments</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="founder">
+          <div class="avatar">Photo</div>
+          <div>
+            <b>Founder name</b>
+            <span class="role">Founder, Saxum Metals</span>
+            <p>Short factual biography to come: background, relevant experience and where you are based.</p>
+            <p style="margin-top:10px"><a href="https://www.linkedin.com/">LinkedIn profile</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact" aria-labelledby="c-h">
+    <div class="wrap two">
+      <div>
+        <span class="kicker">Get in touch</span>
+        <h2 id="c-h">Tell us what you produce, or what you need</h2>
+        <p class="lead">Call, message or email us, or use the form. We reply personally.</p>
+        <div class="details">
+          <div class="detail"><div><span class="k">WhatsApp</span><span class="v">+000 00 000 0000</span></div></div>
+          <div class="detail"><div><span class="k">Phone</span><span class="v">+000 00 000 0000</span></div></div>
+          <div class="detail"><div><span class="k">Head office</span><span class="v">Luanda, Angola</span></div></div>
+          <div class="detail"><div><span class="k">Email</span><span class="v" id="email">hello@yourcompany.com</span></div><button class="copy-btn" id="copy" type="button">Copy</button><span class="copy-note" id="copy-note" aria-live="polite"></span></div>
+        </div>
+      </div>
+
+      <div class="enquiry" data-endpoint="">
+        <div class="tabs" role="tablist" aria-label="Enquiry type">
+          <button type="button" role="tab" id="tab-producer" aria-controls="form-producer" aria-selected="true">I run a mine or plant</button>
+          <button type="button" role="tab" id="tab-buyer" aria-controls="form-buyer" aria-selected="false">I'm a buyer or smelter</button>
+        </div>
+
+        <form class="eform" id="form-producer" role="tabpanel" aria-labelledby="tab-producer" data-subject="Producer introduction">
+          <input type="hidden" name="Type" value="Producer">
+          <div class="frow">
+            <label for="p-name">Your name<input id="p-name" name="Name" required autocomplete="name"></label>
+            <label for="p-company">Mine or company<input id="p-company" name="Company" required autocomplete="organization"></label>
+          </div>
+          <div class="frow">
+            <label for="p-email">Email<input id="p-email" name="Email" type="email" required autocomplete="email"></label>
+            <label for="p-phone">Phone or WhatsApp<input id="p-phone" name="Phone" type="tel" autocomplete="tel"></label>
+          </div>
+          <div class="frow">
+            <label for="p-country">Country and region<input id="p-country" name="Country"></label>
+            <label for="p-commodity">What you produce<select id="p-commodity" name="Commodity"><option>Copper</option><option>Manganese</option><option>Chrome</option><option>Coal</option><option>Tin</option><option>Other</option></select></label>
+          </div>
+          <div class="frow three">
+            <label for="p-form">Product form<input id="p-form" name="Product form" placeholder="e.g. oxide ore, concentrate"></label>
+            <label for="p-grade">Grade<input id="p-grade" name="Grade" placeholder="e.g. 18 (Cu %)"></label>
+            <label for="p-qty">Tonnes per month<input id="p-qty" name="Tonnes per month" inputmode="numeric" placeholder="e.g. 2000"></label>
+          </div>
+          <label for="p-notes">About your mine<textarea id="p-notes" name="Notes" rows="3" placeholder="Licence status, recent test results, stock, existing sales agreements"></textarea></label>
+          <button class="submit" type="submit">Send introduction</button>
+        </form>
+
+        <form class="eform" id="form-buyer" role="tabpanel" aria-labelledby="tab-buyer" data-subject="Sourcing requirement" hidden>
+          <input type="hidden" name="Type" value="Buyer">
+          <div class="frow">
+            <label for="b-name">Your name<input id="b-name" name="Name" required autocomplete="name"></label>
+            <label for="b-company">Company<input id="b-company" name="Company" required autocomplete="organization"></label>
+          </div>
+          <div class="frow">
+            <label for="b-email">Email<input id="b-email" name="Email" type="email" required autocomplete="email"></label>
+            <label for="b-phone">Phone or WhatsApp<input id="b-phone" name="Phone" type="tel" autocomplete="tel"></label>
+          </div>
+          <div class="frow">
+            <label for="b-country">Country<input id="b-country" name="Country"></label>
+            <label for="b-commodity">Commodity<select id="b-commodity" name="Commodity"><option>Copper</option><option>Manganese</option><option>Chrome</option><option>Coal</option><option>Tin</option><option>Other</option></select></label>
+          </div>
+          <div class="frow three">
+            <label for="b-form">Product form<input id="b-form" name="Product form" placeholder="e.g. lumpy ore"></label>
+            <label for="b-grade">Minimum grade<input id="b-grade" name="Grade" placeholder="e.g. 40 (Cr₂O₃ %)"></label>
+            <label for="b-qty">Tonnes per month<input id="b-qty" name="Tonnes per month" inputmode="numeric" placeholder="e.g. 5000"></label>
+          </div>
+          <label for="b-spec">Specification and delivery<textarea id="b-spec" name="Notes" rows="3" placeholder="Impurity limits, delivery point, Incoterm, timing"></textarea></label>
+          <button class="submit" type="submit">Send requirement</button>
+        </form>
+
+        <div class="sent" id="sent" hidden>
+          <b>Your email is ready</b>
+          <p>Your email app should open with this message. If it didn't, copy the message and send it to <span class="sent-to"></span>.</p>
+          <textarea id="sent-body" rows="7" readonly aria-label="Message text"></textarea>
+          <div class="sent-actions"><button type="button" class="copy-btn" id="copy-msg">Copy message</button><button type="button" class="link-btn" id="new-msg">Start again</button></div>
+          <span class="copy-note" id="copy-msg-note" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fwrap">
+      <a class="logo" href="#top" aria-label="Saxum Metals, back to top"><img class="emb" src="assets/emblem-black.png" alt="" width="600" height="600" style="outline:1px solid rgba(255,255,255,.2)"><span class="wm-text"><b>Saxum</b><span>Metals</span></span></a>
+      <nav class="fnav" aria-label="Footer">
+        <a href="#mission">Our mission</a>
+        <a href="#metals">Metals</a>
+        <a href="#mine-owners">For mine owners</a>
+        <a href="#buyers">For buyers</a>
+        <a href="#dossier">Our service</a>
+        <a href="#commodities">Commodities</a>
+        <a href="#where">Where we work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Get in touch</a>
+      </nav>
+    </div>
+    <div class="fbase"><span>Saxum Metals acts as a sourcing agent. We do not own mines or hold mineral stock.</span><span>© 2026 Saxum Metals</span></div>
+    <div class="credits">Photo credits: copper, manganese and tin specimens, GeoDIL (CC0) · chromite, Andrew Silver, USGS (public domain) · coal, Educerva (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>) · open pit, Rob and Stephanie Levy (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>) · conveyor, Peter Craven (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>) · Walvis Bay railway, Diego Delso (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). Images via <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>, resized; specimen photos edited to remove backgrounds.</div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/map.js"></script>
+
+</body>
+</html>
