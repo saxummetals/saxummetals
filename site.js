@@ -140,11 +140,10 @@ function saxumCopy(text, selectEl, note, done) {
   if (!host) return;
   const SYM = 'H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og'.split(' ');
   const OURS = {
-    Cu: { name: 'Copper', tag: 'The metal of electrification', fact: 'After silver, copper is the best electrical conductor of any metal, which is why grids, motors and chargers are built on it.', uses: ['Power grids and cables', 'Electric vehicles and charging', 'Solar and wind', 'Electronics and buildings'], link: '#copper', label: 'copper' },
-    Mn: { name: 'Manganese', tag: 'The hidden ingredient in steel', fact: 'Around 90% of the world’s manganese goes into steelmaking, where it removes impurities and adds strength.', uses: ['Steel', 'Ferromanganese and silicomanganese', 'Battery cathodes', 'Aluminium alloys'], link: '#manganese', label: 'manganese' },
-    Cr: { name: 'Chromium', tag: 'What makes stainless steel stainless', fact: 'Stainless steel contains at least 10.5% chromium, which forms the thin protective layer that stops rust.', uses: ['Stainless steel', 'Ferrochrome', 'Superalloys', 'Refractories and plating'], link: '#chrome', label: 'chrome' },
-    Sn: { name: 'Tin', tag: 'The solder that holds electronics together', fact: 'Around half of the world\u2019s tin is used as solder, joining the components on almost every circuit board.', uses: ['Electronics solder', 'Tinplate packaging', 'Chemicals', 'Bronze and other alloys'], link: '#tin', label: 'tin' },
-    C:  { name: 'Carbon (coal)', tag: 'The energy and reductant of heavy industry', fact: 'Ferrochrome and ferromanganese smelters use coal and coke to turn ore into metal, and most of the world’s primary steel is made the same way.', uses: ['Steelmaking', 'Ferroalloy smelting', 'Power generation', 'Cement'], link: '#coal', label: 'coal' }
+    Sn: { name: 'Tin', tag: 'The solder that holds electronics together', fact: 'Around half of the world’s tin is used as solder, joining the components on almost every circuit board.', uses: ['Electronics solder', 'Tinplate packaging', 'Chemicals', 'Bronze and other alloys'], link: '#tin', label: 'tin' },
+    Ba: { name: 'Barite, from barium', tag: 'The weight behind energy drilling', fact: 'Barite (barium sulphate) is dense, with a specific gravity around 4.2, so most of the world’s supply is used to weight drilling fluids and control pressure in oil and gas wells.', uses: ['Drilling fluids', 'Paints and coatings', 'Plastics and fillers', 'Radiation shielding'], link: '#barite', label: 'barite' },
+    Al: { name: 'Bentonite, an aluminium-silicate clay', tag: 'The clay that swells, seals and binds', fact: 'Bentonite swells many times its dry volume in water. It seals boreholes, holds foundry sand together and binds fine iron ore into pellets for steelmaking.', uses: ['Drilling muds', 'Foundry moulding sand', 'Iron ore pelletising', 'Sealing and civil engineering'], link: '#bentonite', label: 'bentonite' },
+    Mg: { name: 'Vermiculite, a magnesium silicate', tag: 'The mineral that expands with heat', fact: 'When heated, vermiculite flakes exfoliate into light, fire-resistant granules many times their original size.', uses: ['Horticulture and potting mixes', 'Insulation', 'Fire protection', 'Packaging'], link: '#vermiculite', label: 'vermiculite' }
   };
   function pos(z) {
     if (z === 1) return [1, 1];
@@ -173,7 +172,7 @@ function saxumCopy(text, selectEl, note, done) {
     if (info) {
       cell.type = 'button'; cell.dataset.sym = s;
       cell.setAttribute('aria-label', info.name + ', element ' + z);
-      cell.setAttribute('aria-pressed', s === 'Cu');
+      cell.setAttribute("aria-pressed", s === "Sn");
       cell.addEventListener('click', () => show(s));
     } else {
       cell.setAttribute('aria-hidden', 'true');
@@ -198,5 +197,5 @@ function saxumCopy(text, selectEl, note, done) {
     const a = document.getElementById('pd-link'); a.href = info.link; a.textContent = 'See how we source ' + info.label + ' →';
     host.querySelectorAll('.ours').forEach(b => b.setAttribute('aria-pressed', b.dataset.sym === s));
   }
-  show('Cu');
+  show("Sn");
 })();

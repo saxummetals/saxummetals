@@ -371,3 +371,36 @@ footer .wm-text span{color:rgba(255,255,255,.6)}
   .commod .c-grid4 a:nth-child(-n+4){border-bottom:1px dashed var(--dash)}
   .commod .c-grid4 a:nth-child(5){grid-column:1/-1;border-right:0}
 }
+
+/* ---------- Portfolio: tin, barite, bentonite, vermiculite ---------- */
+.commod .c-grid4{grid-template-columns:repeat(4,1fr)}
+.commod .p-icon.brt{background:#2C2C2C}
+.commod .p-icon.bnt{background:#4A4A4A}
+.commod .p-icon.vrm{background:#6B6B6B}
+.commod .p-icon.brt,.commod .p-icon.bnt,.commod .p-icon.vrm{width:52px;font-size:.95rem}
+.commod .p-icon small{white-space:nowrap}
+.mineral-visual{background:#EFEFEF}
+.min-tile{width:min(64%,280px);aspect-ratio:1;max-width:100%;background:#fff;border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;position:relative;box-shadow:0 24px 40px -28px rgba(0,0,0,.35);padding:16px;text-align:center}
+.min-tile small{position:absolute;top:14px;left:16px;right:16px;text-align:left;font-size:.8rem;font-weight:600;color:var(--grey)}
+.min-tile b{font-size:clamp(3.4rem,8vw,5.4rem);letter-spacing:-.05em;line-height:1;color:var(--ink)}
+.min-tile span{font-size:.95rem;font-weight:600;color:var(--grey)}
+@media (max-width:980px){
+  .commod .c-grid4{grid-template-columns:1fr 1fr}
+  .commod .c-grid4 a:nth-child(n){border-bottom:0}
+  .commod .c-grid4 a:nth-child(-n+2){border-bottom:1px dashed var(--dash)}
+  .commod .c-grid4 a:nth-child(2n){border-right:0}
+  .commod .c-grid4 a:nth-child(5){grid-column:auto}
+}
+
+/* ---------- Specialist minerals: why and who we supply ---------- */
+.niche{background:#fff}
+.supply{margin-top:clamp(36px,5vw,56px);display:flex;flex-direction:column;gap:16px}
+.supply-title{font-size:1.3rem}
+.supply-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.buyer{background:var(--sand);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.buyer h4{margin:0;font-size:1.08rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.buyer p{color:var(--grey);font-size:.95rem}
+.buyer .chips{display:flex;flex-wrap:wrap;gap:6px}
+.buyer .chips span{font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:var(--ink);color:#fff;padding:3px 9px;border-radius:999px}
+@media (max-width:980px){.supply-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.supply-grid{grid-template-columns:1fr}}
